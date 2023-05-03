@@ -4,8 +4,8 @@ public class NasaObject {
     private final String copyright;
     private final String date;
     private final String explanation;
-    private final String media_type;
-    private final String service_version;
+    private final String mediaType;
+    private final String serviceVersion;
     private final String title;
     private final String url;
     private final String hdurl;
@@ -13,16 +13,16 @@ public class NasaObject {
     public NasaObject(@JsonProperty("copyright") String copyright,
                       @JsonProperty("date") String date,
                       @JsonProperty("explanation") String explanation,
-                      @JsonProperty("media_type") String media_type,
-                      @JsonProperty("service_version") String service_version,
+                      @JsonProperty("media_type") String mediaType,
+                      @JsonProperty("service_version") String serviceVersion,
                       @JsonProperty("title") String title,
                       @JsonProperty("url") String url,
                       @JsonProperty("hdurl") String hdurl) {
         this.copyright = copyright;
         this.date = date;
         this.explanation = explanation;
-        this.media_type = media_type;
-        this.service_version = service_version;
+        this.mediaType = mediaType;
+        this.serviceVersion = serviceVersion;
         this.title = title;
         this.url = url;
         this.hdurl = hdurl;
@@ -41,11 +41,11 @@ public class NasaObject {
     }
 
     public String getMedia_type() {
-        return media_type;
+        return mediaType;
     }
 
     public String getService_version() {
-        return service_version;
+        return serviceVersion;
     }
 
     public String getTitle() {
